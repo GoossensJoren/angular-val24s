@@ -1,0 +1,39 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav"
+      [ngClass]="{hidden: (isHandset$ | async) === false}"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false"
+      position="end">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/home']">Home</a>
+      <a mat-list-item href="#">Kerstconcert</a>
+      <a mat-list-item href="#">TVH</a>
+      <a mat-list-item href="#">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <img class="logo" src="../../../assets/images/logo.png"/>
+      <span class="spacer"></span>
+      <p class="sloganSpan" [ngClass]="{hidden: (isHandset$ | async) === false}">Tongerlo leeft!</p>
+      <div class="toolbarItems" [ngClass]="{hidden: (isHandset$ | async) === true}">
+        <a [routerLink]="['/home']">Home</a>
+        <a>Kerstconcert</a>
+        <a>TVH</a>
+        <a>Contact</a>
+      </div>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

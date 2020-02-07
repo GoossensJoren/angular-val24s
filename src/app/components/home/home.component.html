@@ -1,0 +1,185 @@
+<header class="topImage">
+    <div class="mainText">
+        <h1>Tongelse dorpsfeesten 2020</h1>
+        <h2>20 en 21 mei</h2>
+    </div>
+</header>
+<mat-grid-list cols="3" rowHeight="{{rowHeight}}" (window:resize)="onResize($event)" class="navContainer">
+    <mat-grid-tile>
+        <div class="navigationDiv">
+            <div class="navigationImg" (click)="scroll(info)">
+                <img class="linkImg" src="../../../assets/images/feast.png" alt="info" />
+            </div>
+            <p class="navInfo">Info</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="navigationDiv">
+            <div class="navigationImg" (click)="scroll(lineup)">
+                <img class="linkImg" src="../../../assets/images/lineup.png" alt="lineup" />
+            </div>
+            <p class="navInfo">lineup</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="navigationDiv">
+            <div class="navigationImg" (click)="scroll(sponsors)">
+                <img class="linkImg" src="../../../assets/images/sponsor.png" alt="sponsors" />
+            </div>
+            <p class="navInfo">sponsors</p>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<div class="infoDiv" #info id="info">
+    <div class="infoText">
+        <p class="infoTitle">tongels dorpsfeest 2020</p>
+        <p>Voor de 34ste keer is er in het weekend van de tweede zondag van mei het Tongels Dorpsfeest. Volgende keer
+            dus op zaterdag 11 en zondag 12 mei 2020.</p>
+    </div>
+    <div class="infoImage">
+    </div>
+</div>
+
+<div class="lineupDiv" #lineup>
+    <div class="lineupImage"></div>
+    <div class="lineupText">
+        <p class="lineupTitle">Programma</p>
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Vrijdag 10 mei
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        klik om lineup te zien
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <p class="location">Feesttent</p>
+                <mat-card>
+                    <mat-card-title>Farce fatale</mat-card-title>
+                    <mat-card-subtitle>22u00</mat-card-subtitle>
+                    <mat-card-content>
+                        <mat-list>
+                            <mat-list-item>gratis toegang</mat-list-item>
+                            <mat-list-item>deuren open van 21u00 tot 01u00</mat-list-item>
+                        </mat-list>
+                    </mat-card-content>
+                </mat-card>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Zaterdag 11 mei
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        klik om lineup te zien
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <p class="location">Primus prodium</p>
+                <mat-card>
+                    <mat-card-title>Ontpopt</mat-card-title>
+                    <mat-card-subtitle>19u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Laura tesoro (met live band)</mat-card-title>
+                    <mat-card-subtitle>22u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Straffen toebak</mat-card-title>
+                    <mat-card-subtitle>01u00</mat-card-subtitle>
+                </mat-card>
+                <p class="location">Prior podium</p>
+                <mat-card>
+                    <mat-card-title>Albino (Tongerlo)</mat-card-title>
+                    <mat-card-subtitle>17u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Harle king met Eva Lambaerts (Tongerlo)</mat-card-title>
+                    <mat-card-subtitle>19u00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>The dukes (Heultje)</mat-card-title>
+                    <mat-card-subtitle>21u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Festeyn</mat-card-title>
+                    <mat-card-subtitle>00u00</mat-card-subtitle>
+                </mat-card>
+                <p class="location">Feesttent</p>
+                <mat-card>
+                    <mat-card-title>Tentfuif</mat-card-title>
+                    <mat-card-subtitle>21u00</mat-card-subtitle>
+                </mat-card>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Zondag 12 mei
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        klik om lineup te zien
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <p class="location">Primus podium</p>
+                <mat-card>
+                    <mat-card-title>Shake</mat-card-title>
+                    <mat-card-subtitle>14u00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>De Romeo's</mat-card-title>
+                    <mat-card-subtitle>17u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Fiesta Perez (Belle Perez met live band)</mat-card-title>
+                    <mat-card-subtitle>20u00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Bar Clochard</mat-card-title>
+                    <mat-card-subtitle>23u00</mat-card-subtitle>
+                </mat-card>
+                <p class="location">Prior podium</p>
+                <mat-card>
+                    <mat-card-title>Sam Gooris</mat-card-title>
+                    <mat-card-subtitle>16u00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Bart Kaell</mat-card-title>
+                    <mat-card-subtitle>18u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>De Kreunaerts (tribute)</mat-card-title>
+                    <mat-card-subtitle>21u30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>After Party (Dj wa kleur hee aave trakteur alias De Maes)</mat-card-title>
+                    <mat-card-subtitle>23u30</mat-card-subtitle>
+                </mat-card>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
+
+<div class="sponsorsDiv" #sponsors>
+    <p class="infoTitle">sponsors</p>
+    <div class="sponsorImageContainer">
+    <mat-list class="sponsorList1">
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor1.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor2.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor3.png"/></mat-list-item>
+    </mat-list>
+    <mat-list class="sponsorList2">
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor4.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor5.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor6.png"/></mat-list-item>
+    </mat-list>
+    <mat-list class="sponsorList3">
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor7.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor8.png"/></mat-list-item>
+        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor9.png"/></mat-list-item>
+    </mat-list>
+    </div>
+</div>

@@ -1,0 +1,197 @@
+.topImage{
+    margin-top: 0px;
+    background-image: url(../../../assets/images/tongerloMainImage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: top center;
+    background-size: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.mainText{
+    padding: 2%;
+    background-color: rgba($color: #8A8786, $alpha: 0.5);
+    border: 0.3vw solid #000;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1{
+    font-size: 3vw;
+    color:white;
+}
+
+h2{
+    font-size: 1.5vw;
+    color: rgba($color: #EDEAE9, $alpha: 1.0);
+}
+
+.navContainer{
+    margin-top: 5vh;
+}
+
+.linkImg{
+    height: 9vw;
+}
+
+.navigationImg{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationImg:hover{
+    background-color: rgb(124, 122, 122);
+    cursor: pointer;
+}
+
+.navigationDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navInfo{
+    font-size: 1.5vw;
+    font-family: sans-serif;
+}
+
+.infoDiv{
+    height: 50vh;
+    background-color: rgb(238, 236, 236);
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.infoText{
+    float: left;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.infoImage{
+    background-image: url(../../../assets/images/tongerloInfo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.infoTitle{
+    font-family: sans-serif;
+    font-size: 3vh;
+    padding-bottom: 1vh;
+    border-bottom: black solid 2px;
+}
+
+.lineupDiv{
+    padding-top: 10vh;
+    width: 100%;
+    height: 20vh;
+}
+
+
+.location{
+    margin-left: 40%;
+    margin-bottom: 5vh;
+    font-family: sans-serif;
+    font-size: 3vh;
+}
+
+.lineupText{
+    width: 70%;
+    float: right;
+}
+
+.lineupImage{
+    background-image: url(../../../assets/images/band.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.sponsorsDiv{
+    padding-top: 5vh;
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+}
+
+.sponsorImageContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.sponsorList1{
+    flex:1;
+}
+
+.sponsorList2{
+    flex:1;
+}
+.sponsorList3{
+    flex:1;
+}
+
+.listItem{
+margin-bottom: 8vh;
+}
+
+@media(max-width: 500px){
+    .navInfo{
+        font-size: 3vw;
+    }
+    .linkImg{
+        height: 15vw;
+    }
+    
+    .navigationImg{
+        width: 25vw;
+        height: 25vw;
+    }
+    .infoText{
+        float: none;
+        width: 100%;
+    }
+    .infoImage{
+        float: none;
+        width: 100%;
+        height: 30vh;
+    }
+    .lineupDiv{
+        margin-top: 15vh;
+    }
+
+    .lineupImage{
+        width: 0%;
+    }
+
+    .lineupText{
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
