@@ -164,22 +164,8 @@
 </div>
 
 <div class="sponsorsDiv" #sponsors>
-    <p class="infoTitle">sponsors</p>
-    <div class="sponsorImageContainer">
-    <mat-list class="sponsorList1">
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor1.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor2.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor3.png"/></mat-list-item>
-    </mat-list>
-    <mat-list class="sponsorList2">
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor4.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor5.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor6.png"/></mat-list-item>
-    </mat-list>
-    <mat-list class="sponsorList3">
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor7.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor8.png"/></mat-list-item>
-        <mat-list-item class="listItem"><img src="../../../assets/images/sponsors/sponsor9.png"/></mat-list-item>
-    </mat-list>
-    </div>
+    <p class="sponsorTitle">sponsors</p>
+    <div class="image-swiper">
+        <ngx-image-swiper [config]="swiperConfig" [images]="images"></ngx-image-swiper>
+      </div>
 </div>

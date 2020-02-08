@@ -13,6 +13,7 @@ import { ConcertComponent } from './components/concert/concert.component';
 import { ContactComponent } from './components/contact/contact.component';
 import{FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { TvhComponent } from './components/tvh/tvh.component';
+import { NgxImageSwiperModule } from 'ngx-image-swiper';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TvhComponent } from './components/tvh/tvh.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule ,
+    NgxImageSwiperModule,
     AgmCoreModule.forRoot({
       apiKey: "AIzaSyDxz70THIVZwo8vmwqdT3-aI928wkx3mac"
     })
