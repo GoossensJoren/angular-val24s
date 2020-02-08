@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirect(){
+    window.location.href = 'https://www.facebook.com/TongerloLeeft';
+  }
+
 }

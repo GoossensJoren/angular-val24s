@@ -1,0 +1,23 @@
+.container{
+    padding: 5%;
+}
+
+.title{
+    font-size: 3vh;
+    font-family: sans-serif;
+}
+
+.flyerImg{
+    background-image: url(../../../assets/images/flyer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 40vh;
+}
+
+@media(max-width: 500px){
+    .flyerImg{
+        width: 100%;
+    }
+}

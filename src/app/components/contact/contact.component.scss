@@ -1,0 +1,40 @@
+agm-map{
+    height: 40vh;
+}
+
+mat-form-field{
+    margin-bottom: 1vh;
+}
+
+.form{
+    padding:10%;
+    width: 80%;
+}
+
+.mail{
+    width: 40%;
+}
+
+.name{
+    width: 20%;
+}
+
+@media(max-width: 1000px){
+    .mail{
+        width: 80%;
+    }
+    
+    .name{
+        width: 50%;
+    }
+}
+
+@media(max-width: 500px){
+    .mail{
+        width: 100%;
+    }
+    
+    .name{
+        width: 100%;
+    }
+}

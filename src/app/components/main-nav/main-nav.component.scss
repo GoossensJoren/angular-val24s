@@ -28,7 +28,9 @@
 
 .sloganSpan{
   margin-right: 5%;
-  color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
   font-size: 1.5vh;
 }
 
@@ -43,6 +45,16 @@
 mat-toolbar {
   height: 100px !important;
   min-height: 100px !important;
+}
+
+.active-link{
+  font-weight: 900;
+}
+
+a{
+  text-decoration: none;
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media(max-width: 1000px){

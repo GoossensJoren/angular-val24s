@@ -4,3 +4,6 @@
 [0204/172917.430:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Toegang geweigerd. (0x5)
 [0204/172917.446:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: De pipe is beëindigd. (0x6D)
 [0204/172917.446:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Toegang geweigerd. (0x5)
+[0208/154215.246:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Toegang geweigerd. (0x5)
+[0208/154215.255:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: De pipe is beëindigd. (0x6D)
+[0208/154215.257:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Toegang geweigerd. (0x5)

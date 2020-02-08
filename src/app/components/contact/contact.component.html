@@ -1,0 +1,41 @@
+<agm-map [latitude]="latitude" [longitude]="longitude">
+    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+</agm-map>
+<form class="form" [formGroup]="myForm">
+    <mat-form-field appearance="outline" class="name">
+        <mat-label>naam</mat-label>
+        <input matInput placeholder="naam" type="text" formControlName="name">
+        <mat-error *ngIf="myForm.get('name').hasError('required')">
+            Dit veld is verplicht
+          </mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline" class="mail">
+        <mat-label>e-mail</mat-label>
+        <input matInput placeholder="e-mail" type="email" formControlName="mail">
+        <mat-error *ngIf="myForm.get('mail').hasError('email') && !myForm.get('mail').hasError('required')">
+            Gelieve een geldig e-mailadres in te vullen
+          </mat-error>
+          <mat-error *ngIf="myForm.get('mail').hasError('required')">
+            Dit veld is verplicht
+          </mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+        <mat-label>vraag aan</mat-label>
+        <mat-select formControlName="organisation">
+            <mat-option value="option1">Organisatie Comité</mat-option>
+            <mat-option value="option2">Webmaster</mat-option>
+          </mat-select>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline" class="mail">
+        <mat-label>Vraag of opmerking</mat-label>
+        <textarea rows="5" matInput placeholder="Opmerking" formControlName="question"></textarea>
+        <mat-error *ngIf="myForm.get('question').hasError('required')">
+            Dit veld is verplicht
+          </mat-error>
+    </mat-form-field>
+    <br/>
+    <button mat-raised-button type="submit" [disabled]="!myForm.valid" (click)="onSubmit()">verstuur</button>
+</form>
