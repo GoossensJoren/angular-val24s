@@ -9,14 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 5% 0% 2% 0%;
+}
+
+mat-expansion-panel{
+    margin-bottom: 1vh;
 }
 
 .mainText{
-    padding: 2%;
-    background-color: rgba($color: #8A8786, $alpha: 0.5);
-    border: 0.3vw solid #000;
-    border-radius: 15px;
+    padding: 5%;
+    background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.6);
+    border-radius: 50%;
     text-align: center;
 }
 
@@ -32,15 +35,17 @@ h2{
 
 .navContainer{
     margin-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .linkImg{
-    height: 9vw;
+    height: 6vw;
 }
 
 .navigationImg{
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     background-color: lightgray;
     display: flex;
@@ -102,9 +107,19 @@ h2{
 .lineupDiv{
     padding-top: 10vh;
     width: 90%;
-    margin-left: 5%;
-    height: 20vh;
+    margin-left: 10%;
+    height: 20%;
 }
+
+mat-panel-title {
+    flex-basis: 0;
+  }
+  mat-panel-description {
+    margin-left: 5%;
+    flex-basis: 100%;
+    color:black;
+    font-weight: 800;
+  }
 
 
 .location{
@@ -115,8 +130,9 @@ h2{
 }
 
 .lineupText{
-    width: 70%;
+    width: 50%;
     float: right;
+    margin-right: 10%;
 }
 
 .lineupImage{
@@ -124,17 +140,48 @@ h2{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 25%;
+    width: 30%;
     height: 100%;
     float: left;
 }
 
+.imagesDiv{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    margin-top: 10%;
+    padding: 3% 0% 5% 0%;
+}
+
+.imagesTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.playButton{
+    position: absolute;
+    height: 30%;
+    top: 40%;
+    left: 45%;
+}
+
+.imageLink{
+    width: 50%;
+    height: auto;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
 .sponsorsDiv{
-    padding-top: 5vh;
-    margin-top: 10vh;
+    padding-top: 2vh;
+    margin-top: 5vh;
     align-items: center;
     height: 70vh;
-    background-color: rgb(238, 236, 236);
     text-align: center;
 }
 
@@ -159,6 +206,9 @@ h2{
     .sponsorsDiv{
         height: 60vh;
     }
+    .lineupDiv{
+        height: 25%;
+    }
 }
 
 @media(max-width: 700px){
@@ -168,24 +218,31 @@ h2{
     .sponsorsDiv{
         height: 45vh;
     }
+
+    .imageLink{
+        width: 60%;
+    }
 }
 
 @media(max-width: 500px){
     .navInfo{
         font-size: 3vw;
     }
+    .navContainer{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     .linkImg{
-        height: 15vw;
+        height: 10vw;
     }
     
     .navigationImg{
-        width: 25vw;
-        height: 25vw;
+        width: 18vw;
+        height: 18vw;
     }
     .infoText{
         float: none;
         width: 90%;
-        margin-left: 5%;
     }
     .infoImage{
         float: none;
@@ -195,6 +252,11 @@ h2{
 
     .infoDiv{
         margin-bottom: 3vh;
+    }
+
+    .lineupDiv{
+        height: 30%;
+        margin-left: 5%;
     }
 
     .lineupImage{
@@ -210,6 +272,17 @@ h2{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .imageLink{
+        width: 80%;
+    }
+}
+
+@media(max-width: 400px){
+    .lineupDiv{
+        height: 35%;
+        margin-top: 12vh;
     }
 }
 

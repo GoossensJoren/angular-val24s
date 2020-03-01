@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "hammerjs": "^2.0.8",
     "ngx-image-swiper": "^1.1.6",
     "rellax": "^1.12.0",
     "rxjs": "~6.4.0",

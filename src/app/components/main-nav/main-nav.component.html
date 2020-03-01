@@ -8,6 +8,7 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item [routerLink]="['/home']">Home</a>
+      <a mat-list-item [routerLink]="['/images']">Foto's</a>
       <a mat-list-item [routerLink]="['/concert']">Kerstconcert</a>
       <a mat-list-item [routerLink]="['/tvh']">TVH</a>
       <a mat-list-item [routerLink]="['/contact']">Contact</a>
@@ -20,6 +21,7 @@
       <p class="sloganSpan" [ngClass]="{hidden: (isHandset$ | async) === false}">Tongerlo leeft!</p>
       <div class="toolbarItems" [ngClass]="{hidden: (isHandset$ | async) === true}">
         <a [routerLink]="['/home']" routerLinkActive="active-link">Home</a>
+        <a [routerLink]="['/images']" routerLinkActive="active-link">Foto's</a>
         <a [routerLink]="['/concert']" routerLinkActive="active-link">Kerstconcert</a>
         <a [routerLink]="['/tvh']" routerLinkActive="active-link">TVH</a>
         <a [routerLink]="['/contact']" routerLinkActive="active-link">Contact</a>

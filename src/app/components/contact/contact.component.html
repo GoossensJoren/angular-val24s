@@ -1,5 +1,14 @@
-<agm-map [latitude]="latitude" [longitude]="longitude">
-    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="12">
+    <agm-marker [latitude]="latitude" [longitude]="longitude">
+      <agm-info-window [isOpen]=true>
+
+        <div>
+            <p class="infoWindowTitle">LOCATIE :</p>
+            <p>Tongerlodorp 2260 Tongerlo, Antwerpen, België</p>
+        </div>
+
+    </agm-info-window>
+    </agm-marker>
 </agm-map>
 <form class="form" [formGroup]="myForm">
     <mat-form-field appearance="outline" class="name">
@@ -37,5 +46,5 @@
           </mat-error>
     </mat-form-field>
     <br/>
-    <button mat-raised-button type="submit" [disabled]="!myForm.valid">verstuur</button>
+    <button mat-raised-button type="submit" (click)="submit()" [disabled]="!myForm.valid">verstuur</button>
 </form>

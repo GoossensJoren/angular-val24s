@@ -1,0 +1,22 @@
+<div class="container" (window:resize)="onResize($event)">
+    <div class="heading">
+        <p class="title">Foto's</p>
+        <p class="description">Bekijk hier al de foto's van eerdere edities</p>
+    </div>
+    <div class="selectedImageContainer">
+        <div class="prevButton" (click)="prevImage()">
+            <img class="prevNextImage" src="../../../assets/images/backArrow.png">
+        </div>
+        <div class="nextButton" (click)="nextImage()">
+            <img class="prevNextImage" src="../../../assets/images/NextArrow.png">
+        </div>
+        <img class="selectedImage" [src]="'../../../assets/images/gallery/' + selectedIndex +'.jpg'" (swiperight)="nextImage()" (swipeleft)="prevImage()"/>
+    </div>
+    <div class="allImages">
+        <mat-grid-list [cols]="amountCols" [@listStagger]='images.length' class="imageList">
+            <mat-grid-tile *ngFor="let image of images; let i = index">
+                <img class="subImage" [ngStyle]="((i + 1) == selectedIndex) ? selectedImageStyle : notSelectedImageStyle" [src]="'../../../assets/images/gallery/icons/icon' + (i+1) +'.jpg'" (click)="ImageSelected(i);"/>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

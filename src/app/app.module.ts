@@ -11,9 +11,11 @@ import {MaterialModule} from '../app/material/material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { ConcertComponent } from './components/concert/concert.component';
 import { ContactComponent } from './components/contact/contact.component';
-import{FormsModule,ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TvhComponent } from './components/tvh/tvh.component';
 import { NgxImageSwiperModule } from 'ngx-image-swiper';
+import {LimitStringPipe} from './pipes/limitStringPipe';
+import { ImagesComponent } from './components/images/images.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgxImageSwiperModule } from 'ngx-image-swiper';
     FooterComponent,
     ConcertComponent,
     ContactComponent,
-    TvhComponent
+    TvhComponent,
+    LimitStringPipe,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { NgxImageSwiperModule } from 'ngx-image-swiper';
     ReactiveFormsModule ,
     NgxImageSwiperModule,
     AgmCoreModule.forRoot({
-      apiKey: "AIzaSyDxz70THIVZwo8vmwqdT3-aI928wkx3mac"
+      apiKey: 'AIzaSyDxz70THIVZwo8vmwqdT3-aI928wkx3mac'
     })
   ],
   providers: [],

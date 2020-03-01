@@ -1,10 +1,10 @@
 <header class="topImage">
     <div class="mainText">
         <h1>Tongelse dorpsfeesten 2020</h1>
-        <h2>20 en 21 mei</h2>
+        <h2>8, 9 en 10 mei</h2>
     </div>
 </header>
-<mat-grid-list cols="3" rowHeight="{{rowHeight}}" (window:resize)="onResize($event)" class="navContainer">
+<mat-grid-list cols="4" rowHeight="{{rowHeight}}" (window:resize)="onResize($event)" class="navContainer">
     <mat-grid-tile>
         <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(info)">
@@ -23,6 +23,14 @@
     </mat-grid-tile>
     <mat-grid-tile>
         <div class="navigationDiv">
+            <div class="navigationImg" (click)="scroll(gallery)">
+                <img class="linkImg" src="../../../assets/images/photo.png" alt="foto's" />
+            </div>
+            <p class="navInfo">Foto's</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(sponsors)">
                 <img class="linkImg" src="../../../assets/images/sponsor.png" alt="sponsors" />
             </div>
@@ -35,7 +43,7 @@
     <div class="infoText">
         <p class="infoTitle">tongels dorpsfeest 2020</p>
         <p>Voor de 34ste keer is er in het weekend van de tweede zondag van mei het Tongels Dorpsfeest. Volgende keer
-            dus op zaterdag 11 en zondag 12 mei 2020.</p>
+            dus op vrijdag 8, zaterdag 9 en zondag 10 mei 2020.</p>
     </div>
     <div class="infoImage">
     </div>
@@ -46,17 +54,20 @@
     <div class="lineupText">
         <p class="lineupTitle">Programma</p>
         <mat-accordion>
-            <mat-expansion-panel>
+            <mat-expansion-panel  (opened)="onExpand1()" (afterCollapse)="onClosed1()">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Vrijdag 10 mei
+                        <i class="material-icons">
+                            date_range
+                            </i>
                     </mat-panel-title>
                     <mat-panel-description>
-                        klik om lineup te zien
+                        Vrijdag 8 mei
                     </mat-panel-description>
                 </mat-expansion-panel-header>
 
-                <p class="location">Feesttent</p>
+                <p>nog niet beschikbaar</p>
+                <!-- <p class="location">Feesttent</p>
                 <mat-card>
                     <mat-card-title>Farce fatale</mat-card-title>
                     <mat-card-subtitle>22u00</mat-card-subtitle>
@@ -66,19 +77,21 @@
                             <mat-list-item>deuren open van 21u00 tot 01u00</mat-list-item>
                         </mat-list>
                     </mat-card-content>
-                </mat-card>
+                </mat-card> -->
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel (opened)="onExpand2()" (afterCollapse)="onClosed2()">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Zaterdag 11 mei
+                        <i class="material-icons">
+                            date_range
+                            </i>
                     </mat-panel-title>
                     <mat-panel-description>
-                        klik om lineup te zien
+                        Zaterdag 9 mei
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-
-                <p class="location">Primus prodium</p>
+                <p>nog niet beschikbaar</p>
+                <!-- <p class="location">Primus prodium</p>
                 <mat-card>
                     <mat-card-title>Ontpopt</mat-card-title>
                     <mat-card-subtitle>19u30</mat-card-subtitle>
@@ -112,19 +125,21 @@
                 <mat-card>
                     <mat-card-title>Tentfuif</mat-card-title>
                     <mat-card-subtitle>21u00</mat-card-subtitle>
-                </mat-card>
+                </mat-card> -->
             </mat-expansion-panel>
-            <mat-expansion-panel>
+            <mat-expansion-panel (opened)="onExpand3()" (afterCollapse)="onClosed3()">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        Zondag 12 mei
+                        <i class="material-icons">
+                            date_range
+                            </i>
                     </mat-panel-title>
                     <mat-panel-description>
-                        klik om lineup te zien
+                        Zondag 10 mei
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-
-                <p class="location">Primus podium</p>
+                <p>nog niet beschikbaar</p>
+                <!-- <p class="location">Primus podium</p>
                 <mat-card>
                     <mat-card-title>Shake</mat-card-title>
                     <mat-card-subtitle>14u00</mat-card-subtitle>
@@ -157,9 +172,22 @@
                 <mat-card>
                     <mat-card-title>After Party (Dj wa kleur hee aave trakteur alias De Maes)</mat-card-title>
                     <mat-card-subtitle>23u30</mat-card-subtitle>
-                </mat-card>
+                </mat-card> -->
             </mat-expansion-panel>
         </mat-accordion>
+    </div>
+</div>
+
+<div [style.height]="margin"></div>
+
+<div class="imagesDiv" #gallery>
+    <div class="imagesHeading">
+        <p class="imagesTitle">Foto's</p>
+        <p>Bekijk hier de foto's van voorgaande edities</p>
+    </div>
+    <div class="imageContainer">
+        <img src="../../../assets/images/play.png" class="playButton" [@popOverState]="stateName()"/>
+        <img src="../../../assets/images/gallery/5.jpg" class="imageLink" (mouseover)="toggle()" (mouseleave)="toggle()" (click)="navigateToPictures()"/>
     </div>
 </div>
 
