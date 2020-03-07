@@ -52,17 +52,17 @@ export class HomeComponent implements OnInit {
 
   onExpand1(){
     this.opened = 1;
-    //this.margin = "350px";
+    this.margin = "350px";
   }
 
   onExpand2(){
     this.opened = 2;
-    //this.margin = "1000px";
+    this.margin = "1000px";
   }
 
   onExpand3(){
     this.opened = 3;
-    //this.margin = "900px";
+    this.margin = "1000px";
   }
 
   onClosed1(){
@@ -104,9 +104,6 @@ onResize(event) {
     this.rowHeight = "15vw";
   }
 }
-
-
-
 
 scroll(el: HTMLElement) {
   el.scrollIntoView({behavior:"smooth"});

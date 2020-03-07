@@ -10,7 +10,8 @@
     </agm-info-window>
     </agm-marker>
 </agm-map>
-<form class="form" [formGroup]="myForm">
+
+<form class="form" [formGroup]="myForm" #contactForm="ngForm">
     <mat-form-field appearance="outline" class="name">
         <mat-label>naam</mat-label>
         <input matInput placeholder="naam" type="text" formControlName="name">
@@ -46,5 +47,8 @@
           </mat-error>
     </mat-form-field>
     <br/>
-    <button mat-raised-button type="submit" (click)="submit()" [disabled]="!myForm.valid">verstuur</button>
+    <div class="submitLoaderContainer">
+    <button mat-raised-button type="submit" (click)="submit(contactForm)" [disabled]="!myForm.valid || !enabled" class="submitButton">verstuur</button>
+    <mat-spinner [diameter]="30" class="spinner" *ngIf="loading"></mat-spinner>
+  </div>
 </form>

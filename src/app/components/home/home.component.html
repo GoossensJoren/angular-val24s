@@ -1,6 +1,6 @@
 <header class="topImage">
     <div class="mainText">
-        <h1>Tongelse dorpsfeesten 2020</h1>
+        <h1>Tongels Dorpsfeest 2020</h1>
         <h2>8, 9 en 10 mei</h2>
     </div>
 </header>
@@ -8,7 +8,7 @@
     <mat-grid-tile>
         <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(info)">
-                <img class="linkImg" src="../../../assets/images/feast.png" alt="info" />
+                <img class="linkImg" src="../../../assets/images/feast.png" alt="Info" />
             </div>
             <p class="navInfo">Info</p>
         </div>
@@ -16,7 +16,7 @@
     <mat-grid-tile>
         <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(lineup)">
-                <img class="linkImg" src="../../../assets/images/lineup.png" alt="lineup" />
+                <img class="linkImg" src="../../../assets/images/lineup.png" alt="Line Up" />
             </div>
             <p class="navInfo">lineup</p>
         </div>
@@ -24,7 +24,7 @@
     <mat-grid-tile>
         <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(gallery)">
-                <img class="linkImg" src="../../../assets/images/photo.png" alt="foto's" />
+                <img class="linkImg" src="../../../assets/images/photo.png" alt="Foto's" />
             </div>
             <p class="navInfo">Foto's</p>
         </div>
@@ -32,7 +32,7 @@
     <mat-grid-tile>
         <div class="navigationDiv">
             <div class="navigationImg" (click)="scroll(sponsors)">
-                <img class="linkImg" src="../../../assets/images/sponsor.png" alt="sponsors" />
+                <img class="linkImg" src="../../../assets/images/sponsor.png" alt="Sponsors" />
             </div>
             <p class="navInfo">sponsors</p>
         </div>
@@ -41,16 +41,20 @@
 
 <div class="infoDiv" #info id="info">
     <div class="infoText">
-        <p class="infoTitle">tongels dorpsfeest 2020</p>
+        <p class="infoTitle">Tongels Dorpsfeest 2020</p>
         <p>Voor de 34ste keer is er in het weekend van de tweede zondag van mei het Tongels Dorpsfeest. Volgende keer
-            dus op vrijdag 8, zaterdag 9 en zondag 10 mei 2020.</p>
+            dus op vrijdag 8, zaterdag 9 en zondag 10 mei 2020. Vrijdag is er vrije toegang, zaterdag en zondag bedraagt de inkom €10.
+            Met een polsbandje dat op zaterdag gekocht is hebt u zondag gratis toegang.</p>
     </div>
     <div class="infoImage">
     </div>
 </div>
 
 <div class="lineupDiv" #lineup>
+    <div class="imagePdfContainer">
     <div class="lineupImage"></div>
+    <a href="../../../assets/files/Line-Up.pdf" download><div class="pdfButton"><img src="../../../assets/images/pdf.png" class="pdfImage"/><p class="downloadText">download line up</p></div></a>
+    </div>
     <div class="lineupText">
         <p class="lineupTitle">Programma</p>
         <mat-accordion>
@@ -66,18 +70,17 @@
                     </mat-panel-description>
                 </mat-expansion-panel-header>
 
-                <p>nog niet beschikbaar</p>
-                <!-- <p class="location">Feesttent</p>
+                <p class="location">Feesttent</p>
                 <mat-card>
-                    <mat-card-title>Farce fatale</mat-card-title>
-                    <mat-card-subtitle>22u00</mat-card-subtitle>
+                    <mat-card-title>TUSH</mat-card-title>
+                    <mat-card-subtitle>22h00</mat-card-subtitle>
                     <mat-card-content>
                         <mat-list>
                             <mat-list-item>gratis toegang</mat-list-item>
                             <mat-list-item>deuren open van 21u00 tot 01u00</mat-list-item>
                         </mat-list>
                     </mat-card-content>
-                </mat-card> -->
+                </mat-card>
             </mat-expansion-panel>
             <mat-expansion-panel (opened)="onExpand2()" (afterCollapse)="onClosed2()">
                 <mat-expansion-panel-header>
@@ -90,42 +93,46 @@
                         Zaterdag 9 mei
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>nog niet beschikbaar</p>
-                <!-- <p class="location">Primus prodium</p>
+
+                <p class="location">Podium Variant</p>
                 <mat-card>
-                    <mat-card-title>Ontpopt</mat-card-title>
-                    <mat-card-subtitle>19u30</mat-card-subtitle>
+                    <mat-card-title>De Kreunaers</mat-card-title>
+                    <mat-card-subtitle>20h00</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Laura tesoro (met live band)</mat-card-title>
-                    <mat-card-subtitle>22u30</mat-card-subtitle>
+                    <mat-card-title>The Silver Lining</mat-card-title>
+                    <mat-card-subtitle>22h45</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Straffen toebak</mat-card-title>
-                    <mat-card-subtitle>01u00</mat-card-subtitle>
-                </mat-card>
-                <p class="location">Prior podium</p>
-                <mat-card>
-                    <mat-card-title>Albino (Tongerlo)</mat-card-title>
-                    <mat-card-subtitle>17u30</mat-card-subtitle>
+                    <mat-card-title>Ilsen & Verhulst</mat-card-title>
+                    <mat-card-subtitle>00h45</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Harle king met Eva Lambaerts (Tongerlo)</mat-card-title>
-                    <mat-card-subtitle>19u00</mat-card-subtitle>
+                    <mat-card-title>2 Fabiola</mat-card-title>
+                    <mat-card-subtitle>02h00</mat-card-subtitle>
+                </mat-card>
+                <p class="location">Podium Kerk</p>
+                <mat-card>
+                    <mat-card-title>Yellow City</mat-card-title>
+                    <mat-card-subtitle>18h30</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>The dukes (Heultje)</mat-card-title>
-                    <mat-card-subtitle>21u30</mat-card-subtitle>
+                    <mat-card-title>Cliff Willy & podiumboys</mat-card-title>
+                    <mat-card-subtitle>21h00</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Festeyn</mat-card-title>
-                    <mat-card-subtitle>00u00</mat-card-subtitle>
+                    <mat-card-title>AC 4 DC</mat-card-title>
+                    <mat-card-subtitle>23h00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Farce Fatal</mat-card-title>
+                    <mat-card-subtitle>01h00</mat-card-subtitle>
                 </mat-card>
                 <p class="location">Feesttent</p>
                 <mat-card>
-                    <mat-card-title>Tentfuif</mat-card-title>
-                    <mat-card-subtitle>21u00</mat-card-subtitle>
-                </mat-card> -->
+                    <mat-card-title>Jeugdfuif met 3 DJ's</mat-card-title>
+                    <mat-card-subtitle>22h00</mat-card-subtitle>
+                </mat-card>
             </mat-expansion-panel>
             <mat-expansion-panel (opened)="onExpand3()" (afterCollapse)="onClosed3()">
                 <mat-expansion-panel-header>
@@ -138,43 +145,52 @@
                         Zondag 10 mei
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>nog niet beschikbaar</p>
-                <!-- <p class="location">Primus podium</p>
+
+                <p class="location">Podium Variant</p>
                 <mat-card>
-                    <mat-card-title>Shake</mat-card-title>
-                    <mat-card-subtitle>14u00</mat-card-subtitle>
+                    <mat-card-title>The KetnetBand</mat-card-title>
+                    <mat-card-subtitle>14h30</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>De Romeo's</mat-card-title>
-                    <mat-card-subtitle>17u30</mat-card-subtitle>
+                    <mat-card-title>Willy Sommers</mat-card-title>
+                    <mat-card-subtitle>17h30</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Fiesta Perez (Belle Perez met live band)</mat-card-title>
-                    <mat-card-subtitle>20u00</mat-card-subtitle>
+                    <mat-card-title>Les Copines</mat-card-title>
+                    <mat-card-subtitle>19h00</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Bar Clochard</mat-card-title>
-                    <mat-card-subtitle>23u00</mat-card-subtitle>
-                </mat-card>
-                <p class="location">Prior podium</p>
-                <mat-card>
-                    <mat-card-title>Sam Gooris</mat-card-title>
-                    <mat-card-subtitle>16u00</mat-card-subtitle>
+                    <mat-card-title>The Soulbrothers</mat-card-title>
+                    <mat-card-subtitle>23h00</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>Bart Kaell</mat-card-title>
-                    <mat-card-subtitle>18u30</mat-card-subtitle>
+                    <mat-card-title>Wa Kleur Hee Aaven Trakteur</mat-card-title>
+                    <mat-card-subtitle>00h30</mat-card-subtitle>
+                </mat-card>
+                <p class="location">Podium Kerk</p>
+                <mat-card>
+                    <mat-card-title>de Flierenfluiters</mat-card-title>
+                    <mat-card-subtitle>13h30</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>De Kreunaerts (tribute)</mat-card-title>
-                    <mat-card-subtitle>21u30</mat-card-subtitle>
+                    <mat-card-title>Jettie Pallettie</mat-card-title>
+                    <mat-card-subtitle>16h00</mat-card-subtitle>
                 </mat-card>
                 <mat-card>
-                    <mat-card-title>After Party (Dj wa kleur hee aave trakteur alias De Maes)</mat-card-title>
-                    <mat-card-subtitle>23u30</mat-card-subtitle>
-                </mat-card> -->
+                    <mat-card-title>Vaja Kon Diaz</mat-card-title>
+                    <mat-card-subtitle>18h00</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Pussy Wilow</mat-card-title>
+                    <mat-card-subtitle>20h30</mat-card-subtitle>
+                </mat-card>
+                <mat-card>
+                    <mat-card-title>Festeyn</mat-card-title>
+                    <mat-card-subtitle>22h30</mat-card-subtitle>
+                </mat-card>
             </mat-expansion-panel>
         </mat-accordion>
+        <a href="../../../assets/files/Line-Up.pdf" download><div class="pdfButton2"><img src="../../../assets/images/pdf.png" class="pdfImage"/><p class="downloadText">download line up</p></div></a>
     </div>
 </div>
 
@@ -186,7 +202,7 @@
         <p>Bekijk hier de foto's van voorgaande edities</p>
     </div>
     <div class="imageContainer">
-        <img src="../../../assets/images/play.png" class="playButton" [@popOverState]="stateName()"/>
+        <img src="../../../assets/images/play.png" class="playButton" [@popOverState]="stateName()" (mouseover)="toggle()" (mouseleave)="toggle()" (click)="navigateToPictures()"/>
         <img src="../../../assets/images/gallery/5.jpg" class="imageLink" (mouseover)="toggle()" (mouseleave)="toggle()" (click)="navigateToPictures()"/>
     </div>
 </div>

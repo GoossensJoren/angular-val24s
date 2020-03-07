@@ -16,6 +16,7 @@ import { TvhComponent } from './components/tvh/tvh.component';
 import { NgxImageSwiperModule } from 'ngx-image-swiper';
 import {LimitStringPipe} from './pipes/limitStringPipe';
 import { ImagesComponent } from './components/images/images.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ImagesComponent } from './components/images/images.component';
     FormsModule,
     ReactiveFormsModule ,
     NgxImageSwiperModule,
+    HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDxz70THIVZwo8vmwqdT3-aI928wkx3mac'
     })

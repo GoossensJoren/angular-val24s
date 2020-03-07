@@ -25,6 +25,18 @@ mat-form-field{
     font-size: 1.7vh;
 }
 
+.submitLoaderContainer{
+    width: 20%;
+}
+
+.submitButton{
+    width: 75%;
+    float: left;
+}
+
+.spinner{
+    float: right;
+}
 @media(max-width: 1000px){
     .mail{
         width: 80%;
@@ -32,6 +44,9 @@ mat-form-field{
     
     .name{
         width: 50%;
+    }
+    .submitLoaderContainer{
+        width: 40%;
     }
 }
 
@@ -42,5 +57,9 @@ mat-form-field{
     
     .name{
         width: 100%;
+    }
+    .submitLoaderContainer{
+        width: 55%;
+        margin-bottom: 10%;
     }
 }

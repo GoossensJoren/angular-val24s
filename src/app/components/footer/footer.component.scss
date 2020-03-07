@@ -23,7 +23,7 @@
 
 .footerContainer{
     background-color: rgba(245, 245, 245, 0.733);
-    border-top: 1px solid gray;
+    //border-top: 1px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,4 +32,10 @@
     width: 100%;
     position: relative;
     bottom: 0px;
+}
+
+@media(max-width: 500px){
+    .logo{
+        margin-top: 2vh;
+    }
 }
